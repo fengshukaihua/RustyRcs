@@ -12,8 +12,34 @@
   ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~    See the License for the specific language governing permissions and
   ~    limitations under the License.
+
+  fengshukaihua updated Again!
+一、移动国家代码（MCC）
+    移动国家代码（MCC）是一个由3位数字组成的代码，用于唯一地识别移动用户所属的国家。
+    这个代码由国际电联（ITU）统一分配和管理。
+    例如，中国的MCC为460，美国的MCC为310，英国的MCC为234。
+    MCC在移动通信网络中起着至关重要的作用，它用于国际移动用户识别（IMSI）
+    和位置区识别（LAI）中，帮助网络运营商识别用户的归属国家，从而提供正确的漫游服务。
+
+二、移动网络代码（MNC）
+    移动网络代码（MNC）是一个由2位或3位数字组成的代码，
+    用于识别移动用户所归属的移动网络。
+    MNC与MCC相结合，可以唯一地标识一个移动网络提供者。
+    例如，在中国，
+    中国移动的MNC为00，
+    中国联通的MNC为01，
+    中国电信的MNC为03。
+    MNC的作用在于区分同一国家内的不同移动网络运营商，从
+    而确保用户能够接入正确的网络，享受相应的通信服务。
   -->
 
 <resources>
     <string name="app_name">RustyRcs</string>
+
+    <integer name="mcc">460</integer><!-- your country code -->
+    <integer name="mnc">00</integer><!-- your network code -->
+    <string name="imsi" translatable="false">your imsi</string>
+    <string name="imei" translatable="false">your imei</string>
+    <string name="msisdn" translatable="false">your msisdn (with the plus sign)</string>
+    <string name="to_msisdn" translatable="false">peer msisdn (with the plus sign)</string>
 </resources>
